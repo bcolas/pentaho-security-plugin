@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory name="">
+		<property name="hibernate.connection.driver_class">{JDBC Driver class}</property>
+		<property name="hibernate.connection.password">{Password}</property>
+		<property name="hibernate.connection.url">{JDBC URL}</property>
+		<property name="hibernate.connection.username">{User}</property>
+		<property name="hibernate.current_session_context_class">thread</property>
+
+		<mapping resource="org/pentaho/dsp/DBSecurityBasedFilter.hbm.xml"/>
+		<mapping resource="org/pentaho/metadata/DBSecurityBasedConstraint.hbm.xml"/>
+	</session-factory>
+</hibernate-configuration>
