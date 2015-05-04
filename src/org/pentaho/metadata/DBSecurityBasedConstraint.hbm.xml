@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 1 mai 2015 23:28:31 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="org.pentaho.metadata.DBSecurityBasedConstraint" table="ADM_SECURITYCONSTRAINT">
+    	<composite-id>
+    		<key-property name="queryModel" column="PK_C_QUERYMODEL" type="java.lang.String"/>
+    		<key-property name="tableName" column="PK_C_TABLENAME" type="java.lang.String"/>
+            <key-property name="sessionVar" column="PK_C_SESSIONVAR" type="java.lang.String"/>
+		</composite-id>
+        <property name="whereClause" type="java.lang.String" >
+            <column name="A_C_WHERECLAUSE" />
+        </property>
+    </class>
+</hibernate-mapping>
