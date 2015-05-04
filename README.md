@@ -1,0 +1,2 @@
+# pentaho-security-plugin
+Initialization
