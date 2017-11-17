@@ -4,6 +4,7 @@
 <hibernate-configuration>
 	<session-factory name="">
 		<property name="hibernate.connection.driver_class">{JDBC Driver class}</property>
+		<property name="dialect">{Hibernate Dialect class}</property>
 		<property name="hibernate.connection.password">{Password}</property>
 		<property name="hibernate.connection.url">{JDBC URL}</property>
 		<property name="hibernate.connection.username">{User}</property>
